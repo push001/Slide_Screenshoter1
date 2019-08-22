@@ -15,9 +15,9 @@ time.sleep(6)
 i = 1
 
 try:
-     xCord, yCord = pyautogui.locateCenterOnScreen("left_arrow.png")
+     xCord, yCord = pyautogui.locateCenterOnScreen("right_arrow.png")
 except:
-     print("\n\nProper left arrow not found !")
+     print("\n\nProper right arrow not found !")
      sys.exit()
      
 time.sleep(2)

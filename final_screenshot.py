@@ -2,6 +2,8 @@ import pyautogui
 import time
 import sys
 
+pyautogui.FAILSAFE = False
+
 print("Please go and open that particular  slide address in your browser.")
 
 print("\nI hope your slides are ready !\n")
@@ -27,7 +29,7 @@ try:
          pyautogui.screenshot("{}\image{}.png".format(address,i))
          i  +=1
          pyautogui.click(x=xCord, y=yCord)
-         time.sleep(2)
+         #time.sleep(1)
 finally:
      print('\nDone')
      
